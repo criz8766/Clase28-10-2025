@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Fragment } from "react";
 import { db } from "../firebaseConfig";
-import { collection, getDocs, onSnapshot } from "firebase/firestore";
+import { collection, addDoc, onSnapshot } from "firebase/firestore";
 
 export function Usuario(){
     const [usuarios, setUsuarios] = useState([]);
